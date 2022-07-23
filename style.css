@@ -9,7 +9,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .navContainer {
@@ -51,4 +51,46 @@ li:last-child a {
 li:last-child a:hover {
     border-bottom: none;
     background-color: #8cc63f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    color: white;
+    position: absolute;
+    width: 70%;
+    font-weight: bold;
+}
+
+.container div:first-child {
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container > div > :nth-child(2) {
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container > div > :nth-child(3) {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container > div > :nth-child(3) a{
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.container > div > :nth-child(3) a:hover{
+    color: black;
+    background-color: white;
 }
