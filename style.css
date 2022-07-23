@@ -16,6 +16,10 @@ a {
     display: flex;
     justify-content: space-evenly;
     box-shadow: 0 0 5px gray;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
 }
 
 .navContainer div {
@@ -57,6 +61,8 @@ li:last-child a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    padding-top: 58px;
 }
 
 .container > div {
@@ -76,21 +82,64 @@ li:last-child a:hover {
     font-size: 20px;
     text-align: center;
     margin: 30px 0;
+    font-weight: normal;
 }
 
 .container > div > :nth-child(3) {
     text-align: center;
     margin: 40px 0;
-}
-
-.container > div > :nth-child(3) a{
-    padding: 10px 30px;
-    border: 2px solid white;
-    border-radius: 25px;
     font-size: 14px;
 }
 
-.container > div > :nth-child(3) a:hover{
+.container > div > :nth-child(3) > a{
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.container > div > :nth-child(3) > a:hover{
     color: black;
     background-color: white;
+}
+
+.secondContainer {
+    height: 100vh;
+    background-image: url(images/three-people.png);
+    display: flex;
+}
+
+.secondContainer > div {
+    width: 47.5%;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+.secondContainer > div > :first-child {
+    font-size: 50px;
+    margin: 30px 0;
+    
+}
+
+.secondContainer > div > :nth-child(2) {
+    font-size: 22px;
+    margin: 30px 0;
+    font-weight: normal;
+}
+
+.secondContainer > div > :nth-child(3) {
+    font-size: 14px;
+    margin: 40px 0;
+}
+
+.secondContainer > div > :nth-child(3) > a{
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.secondContainer > div > :nth-child(3) > a:hover{
+    color: white;
+    background-color: black;
 }
