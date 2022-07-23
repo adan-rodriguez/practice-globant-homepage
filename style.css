@@ -15,7 +15,7 @@ a {
 .navContainer {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px grey;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -142,4 +142,22 @@ li:last-child a:hover {
 .secondContainer > div > :nth-child(3) > a:hover{
     color: white;
     background-color: black;
+}
+
+.thirdContainer {
+    margin: 40px;
+    text-align: center;
+}
+
+.thirdContainer > :nth-child(1) {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 40px;
+}
+
+.thirdContainer > :nth-child(2) {
+    font-size: 25px;
+    margin: 40px 0;
+    color: #747474;
+    line-height: 1.5;
 }
