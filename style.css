@@ -161,3 +161,54 @@ li:last-child a:hover {
     color: #747474;
     line-height: 1.5;
 }
+
+.fourthContainer {
+    display: flex;
+    align-items: center;
+}
+
+.fourthContainer > :nth-child(1) {
+    width: 40%;
+}
+
+.fourthContainer > :nth-child(1) > div {
+    margin: 30px 60px;
+}
+
+.fourthContainer > :nth-child(1) > :nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fourthContainer > :nth-child(1) > :nth-child(2) > span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.fourthContainer > :nth-child(1) > :nth-child(4) {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.fourthContainer > :nth-child(1) > :nth-child(4) > a {
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.fourthContainer > :nth-child(1) > :nth-child(4) > a:hover {
+    background-color: black;
+    color: white;
+}
+
+.fourthContainer > :nth-child(2) {
+    width: 60%;
+}
+
+.fourthContainer > :nth-child(2) > img {
+    width: 85%;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 0 50px grey;
+}
